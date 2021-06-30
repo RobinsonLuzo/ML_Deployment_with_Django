@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+
 {% block main %}
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -56,6 +57,7 @@
     </div>
 </div>
 
+<!-- Javascript func call on submit -->
 <script>
     $(document).on('submit', '#post-form',function(e){
         e.preventDefault();
