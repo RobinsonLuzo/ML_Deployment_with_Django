@@ -11,12 +11,16 @@ Clicking the "Submit" button should result in a small pop-up window with the pre
 
 <img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/django_prediction_output.JPG" alt="Django Prediction Results" width="300"/>
 
-## The Model:
+There is a view that will allow a user to see the previous prediction results and their input also:
 
-The model is developed in a Jupyter Notebook ("Iris_model_training") and saved to disk. The notebook's second cell shows roughly how the input will be taken from the user in Django:
+<img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/db_results.JPG" alt="Django DB" width="300"/>
 
-<img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/notebook_prompt.JPG" alt="Notebook Prompt for user input" width="300"/>
+## Developing the Model:
+
+The model is developed in a Jupyter Notebook ("Iris_model_training") using *sklearn* and saved to disk. The notebook's second cell shows roughly how the input will be taken from the user in Django:
+
+<img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/notebook_prompt.JPG" alt="Notebook Prompt for user input" width="400"/>
 
 This yields a prediction of the flower based on the details supplied:
 
-<img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/notebook_prediction.JPG" alt="Notebook Prediction for user input" width="300"/>
+<img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/notebook_prediction.JPG" alt="Notebook Prediction for user input" width="400"/>
