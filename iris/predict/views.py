@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+# Prediction view
+def predict(request):
+    return render(request, 'predict.html')
