@@ -6,14 +6,13 @@ For the Django project itself use the command: "python manage.py runserver" in t
 
 <img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/django_input.JPG" alt="Django Prompt for user input" width="300"/>
 
-
 Clicking the "Submit" button should result in a small pop-up window with the predicted result, given the input data.
 
 <img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/django_prediction_output.JPG" alt="Django Prediction Results" width="300"/>
 
 There is a view that will allow a user to see the previous prediction results and their input also:
 
-<img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/db_results.JPG" alt="Django DB" width="300"/>
+<img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/db_results.JPG" alt="Django DB" width="500"/>
 
 ## Developing the Model:
 
