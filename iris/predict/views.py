@@ -2,6 +2,7 @@ import joblib
 import os
 from django.http import JsonResponse
 from django.shortcuts import render
+from .models import PredResults
 
 # Prediction view
 def predict(request):
@@ -23,6 +24,10 @@ def predict_chances(request):
         # Make prediction:
         result = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
         classification = result[0]
+
+        # Assign to db:
+        PredResults.objects.create(sepal_length=sepal_length, sepal_width=sepal_width, petal_length=petal_length,
+                                   petal_width=petal_width, classification=classification)
         
         # return result and submitted data:
         return JsonResponse({'result':  classification, 'sepal_length': sepal_length,
