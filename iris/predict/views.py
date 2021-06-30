@@ -1,4 +1,5 @@
 import joblib
+import os
 from django.http import JsonResponse
 from django.shortcuts import render
 
@@ -16,14 +17,15 @@ def predict_chances(request):
         petal_length = float(request.POST.get('petal_length'))
         petal_width  = float(request.POST.get('petal_width'))
 
-        model = joblib.load(r"C:\Users\BenDa\Desktop\Projects\ML_Deployment_with_Django\saved_model\iris_prediction.pkl")
+        # load model from storage:
+        model = joblib.load(os.path.dirname(os.getcwd()) + "\\saved_model\\iris_prediction.pkl")
 
-        # Make prediction
+        # Make prediction:
         result = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
-
         classification = result[0]
-
-        return JsonResponse({'result': classification, 'sepal_length': sepal_length,
+        
+        # return result and submitted data:
+        return JsonResponse({'result':  classification, 'sepal_length': sepal_length,
                              'sepal_width': sepal_width, 'petal_length': petal_length, 'petal_width': petal_width},
                             safe=False)
 
