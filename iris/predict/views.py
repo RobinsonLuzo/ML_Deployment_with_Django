@@ -34,3 +34,8 @@ def predict_chances(request):
                              'sepal_width': sepal_width, 'petal_length': petal_length, 'petal_width': petal_width},
                             safe=False)
 
+
+# view database of predictions:
+def view_results(request):
+    data = {"dataset": PredResults.objects.all()}
+    return render(request, "results.html", data)
