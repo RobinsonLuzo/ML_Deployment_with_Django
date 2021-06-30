@@ -4,7 +4,8 @@ An example of building, saving and deploying a machine learning model using Djan
 
 For the Django project itself use the command: "python manage.py runserver" in the "iris" folder to start the application. In here you can enter the numbers to be used as data for a prediction - it should look like so:
 
-![Django input](https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/django_input.JPG "Django Prompt for user input")
+<img src="https://raw.githubusercontent.com/RobinsonLuzo/ML_Deployment_with_Django/main/img/django_input.JPG" alt="Django Prompt for user input" width="200"/>
+
 
 Clicking the "Submit" button should result in a small pop-up window with the predicted result, given the input data.
 
